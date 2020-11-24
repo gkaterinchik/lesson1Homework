@@ -24,28 +24,10 @@ public class Main {
     }
 
     public static String isLeapYear(int year)
+     public static String isLeapYear(int year)
     {
         String isleap="";
-        if (year<100)
-        {
-            if((year%4)!=0){
-                isleap="обычный";
-            }
-            else isleap="Високосный";
-        }
-        else if(year==100){
-            isleap="обычный";
-        }
-        else if((year>100)&&(year<400))
-        {
-            if((year%4)!=0||(year%100==0)){
-                isleap="обычный";
-            }else
-            isleap="Високосный";
 
-        }
-        else if (year>=400)
-        {
 
             if((year%4!=0)||(year%100==0)&&(year%400!=0)){
                 isleap="обычный";
@@ -53,7 +35,7 @@ public class Main {
             }else
                 isleap="Високосный";
 
-        }
+
         return isleap ;
     }
 
