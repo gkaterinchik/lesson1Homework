@@ -23,7 +23,7 @@ public class Main {
        // checkNumber(10);
        // System.out.println(checkNegative(6));
        // hello("Илья");
-        arrReplace(7);
+        arrReplace(1);
 
     }
 
@@ -100,7 +100,6 @@ public class Main {
         for (int i = 0; i <= arr.length-1; i++) {
             pos = i + n;
             pos = recPos(pos);
-            //DebugN(pos);
             a = arr[pos];
             b = c;
             arr[pos] = b;
