@@ -7,13 +7,27 @@ public class Replace {
     public static void main(String[] args) {
 
 
-        replace(arr,-2);
+        replace(arr,-50);
     }
 
     public static int[] replace(int[] arr, int n)
     {
-        if (n==0) return arr;
-        if (n<0) n=arr.length+n;
+        if (n==0)
+        {
+            for(int j=0; j<=arr.length-1; j++)
+                System.out.println(arr[j]);
+            return arr;
+        }
+        if (n<0)
+        {
+            if(n*(-1)>arr.length){
+                n=n%arr.length;
+                n=n*(-1);
+            }
+            n = arr.length + n;
+
+        }
+        if(n>arr.length)n=n%arr.length;
         for(int i=0;i<n; i++)
         {
             arrReplace();
@@ -23,7 +37,7 @@ public class Replace {
         return arr;
     }
      private static void arrReplace() {
-        int a, b, c;
+        int a, b;
         int pos = 0;
         a = arr[0];
         for (int i = 0; i <= arr.length - 1; i++) {
