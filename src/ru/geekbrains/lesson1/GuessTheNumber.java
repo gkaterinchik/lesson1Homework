@@ -42,9 +42,10 @@ public static void playerTurn()
     boolean trueConditions=false;
     Scanner inputWord = new Scanner(System.in);
     System.out.println("Угаданные буквы:");
-    for (int i =0; i< guessedLetters.length;i++)
-        System.out.print(guessedLetters[i]+" ");
+    for (String guessedLetter : guessedLetters) System.out.print(guessedLetter + " ");
+
         System.out.println();
+
     while (!trueConditions)
     {
         counter++;
@@ -80,16 +81,8 @@ public static void checkWin()
     }
     else
     {
-        int count;
-        if(playerWordArr.length>randWordArr.length)
-        {
-            count=randWordArr.length;
-        }
-        else
-            {
-                count = playerWordArr.length;
-            }
-       for(int i = 0; i<count;i++)
+        int count = Math.min(playerWordArr.length, randWordArr.length);
+        for(int i = 0; i<count;i++)
        {
         if (playerWordArr[i].equals(randWordArr[i]))
         {guessedLetters[i]=playerWordArr[i];}
