@@ -21,6 +21,8 @@ public class GuessTheNumber {
 
     public static void startGame()
     {
+        System.out.println("Вы играете в игру \"Угадай слово\"! ");
+        System.out.println("Цель - угадать слово загаданное компьютером за минимальное число ходов.");
        getWord();
        playerTurn();
     }
