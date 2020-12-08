@@ -12,7 +12,7 @@ public class Lesson2HomeWork {
     public static void main(String[] args) {
         opposite(arr);
         fillArray(arr2);
-        multiplication();
+        //multiplication();
         fillDiagonal();
         System.out.println(minMax(arrMult));
         System.out.println(compare(arrCompare));

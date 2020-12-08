@@ -2,12 +2,12 @@ package ru.geekbrains.lesson1;
 
 public class Replace {
 
-    static int[] arr = {1,2,3,4,5,6,7,8};
+    static int[] arr = {3,5,6,1};
 
     public static void main(String[] args) {
 
 
-        replace(arr,-50);
+        replace(arr,-2);
     }
 
     public static int[] replace(int[] arr, int n)
