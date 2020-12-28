@@ -23,7 +23,7 @@ public class Main {
 
     }
 
-    public static String isLeapYear(int year)
+
      public static String isLeapYear(int year)
     {
         String isleap="";
