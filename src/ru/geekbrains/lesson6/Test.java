@@ -17,6 +17,8 @@ public class Test {
         dog1.makeSound();
         dog1.swim(10);
         dog1.swim(11);
+        cat1.jump(-10);
+
 
 
     }

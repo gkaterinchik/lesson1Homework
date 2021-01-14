@@ -40,7 +40,7 @@ public class Cat extends Animal implements Animal.CanRun, Animal.CanJump {
         else if(height>jumpHeightLimit)
             System.out.println("слишком большая высота");
         else if (height<0)
-            System.out.println("кошка спрыгнула с высоты "+height+" см");
+            System.out.println("кошка спрыгнула с высоты "+height*(-1)+" см");
     }
 
 }
